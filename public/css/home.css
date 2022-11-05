@@ -1,0 +1,633 @@
+body {
+    background-image: url("https://www.cemanext.it/wp-content/uploads/2016/09/sfondo-landig-social.jpg");
+    background-size: cover;
+    background-position: center;
+    margin: 0px;
+    height:100%;
+    overflow-y: hidden;
+  }
+
+  html{
+    height:100%;
+  }
+   
+  .hidden{
+    display:none;
+  }
+  
+  a:link , a:visited ,a:hover, a:active {
+  color:rgba(16, 8, 87, 0.699);
+  }
+  span#seguiti , span#seguaci {
+    cursor: pointer;
+  }
+  
+  a#Logo{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    color: rgba(16, 8, 87, 0.699);
+    text-decoration: none;
+  }
+  
+  nav#barra{
+    margin-top: 0px;
+    display: flex;
+    
+    height: 50px;
+    background-color: rgba(93, 91, 94, 0.288);
+    border: 0.5px rgba(93, 91, 94, 0) solid;
+    
+  }
+
+  nav#menu {
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    font-family: Helvetica, sans-serif;
+    height: 100%;
+  }
+  
+  nav#menu form input[type=text] {
+    background-color:rgba(107, 94, 221, 0.151);
+    padding: 6px;
+    border: none;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 20px;
+    margin-top:1em;
+    font-family:'Merriweather', serif;
+  }
+
+  nav#profilo{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  span#avatar{
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+  } 
+
+
+
+    span#avatar img , span.Avatar img {
+    width: 45px;
+    height: 45px;
+     border: 2px solid rgba(255, 255, 255, 0);
+     border-radius: 50px;
+    z-index: 1;
+    } 
+    
+    span#nomeUtente  {
+    font-weight: bold;
+    font-size: 20px;
+    font-family:'Merriweather', serif;
+    color: rgb(59, 47, 85);
+    }
+    
+    .boxInfoUtenteNav{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-left: 5px;
+      margin-right: 5px;
+      font-size: 15px;
+      font-family:'Merriweather', serif;
+      color: rgb(59, 47, 85);
+      height: 100%;
+    }
+
+    #seguiti{
+      display: flex;
+    }
+    #seguaci{
+      display: flex;
+    }
+
+    input:focus{
+    outline: none;
+    }
+  
+  .Boxes{
+    font-weight: bold;
+    font-size: 20px;
+    font-family:'Merriweather', serif;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    border-right: 1px rgba(16, 8, 87, 0.123) solid ;
+    border-left: 1px rgba(16, 8, 87, 0.123) solid ;
+  }
+  
+  nav a , nav input {
+    color: rgb(59, 47, 85);
+    text-decoration: none;
+  }
+
+
+  div#Posts{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: calc(100% - 50px);
+  justify-content: space-between;
+  margin-left:100px;
+  margin-right:100px;
+  overflow-y: overlay;
+  background-color:  rgba(229, 219, 250, 0.561);
+  }
+
+  .boxPost{
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    width: 400px;
+    margin: 40px;
+    margin-right: 60px;
+    margin-left: 60px;
+    flex-wrap: wrap;
+  }
+
+  
+
+ .boxProfile{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+  margin-top: 10px;
+ }
+
+ .avatarSpan{
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+ }
+
+ .avatarSpan .imgProfile{
+  width: 45px;
+  height: 45px;
+   border: 2px solid rgba(255, 255, 255, 0);
+   border-radius: 50px;
+  z-index: 1;
+ }
+
+ .nomeProfilo{
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 20px;
+  font-family:'Merriweather', serif;
+  cursor: pointer;
+  color: rgb(59, 47, 85);
+ }
+
+
+
+.dataBox{
+  display: flex;
+  justify-content: flex-end;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 12px;
+  color:rgba(5, 3, 9, 0.671)
+}
+
+.titoloText{
+  font-family: 'Source Sans Pro', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    color: rgba(19, 12, 34, 0.671);
+    width: 100%;
+}
+
+.likeBox{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+input[type='submit'].likeButton{
+  width:40%;
+}
+
+.imageBox{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  
+}
+
+.imagePost{
+  width: 400px;
+  height: 400px
+}
+
+.contatoreLikes{
+  background-color: rgba(46, 44, 67, 0.12);
+  font-size: 20px;
+  height: 30px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+  color: rgba(10, 19, 100, 0.884);
+  border: 1px rgba(107, 94, 221, 0.151) solid;
+  z-index: 1;
+  cursor: pointer;
+  margin-left:74px;
+}
+
+input[type=submit] {
+  background-color: rgba(107, 94, 221, 0.151);
+  font-size:20px;
+  height:30px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+  color: rgba(10, 19, 100, 0.884);
+  border: 1px rgba(107, 94, 221, 0.151) solid;
+  z-index: 1;
+  cursor: pointer;
+  width: 30%;
+}
+
+#modal-view, #modal_cell {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#modal-view img {
+  height: 400px;
+  width: 400px;
+}
+
+#modal-view .informazioni,#modal_cell .informazioni {
+  color: #dcdcdc;
+  font-family: 'Merriweather', serif;
+  font-style: bold;
+  font-size: 20px;
+  margin-left: 15px;
+}
+
+#modal-view .boxUtente{
+display: flex;
+flex-direction: row;
+align-items: center;
+}
+
+#modal-view .FotoProfilo {
+  width: 60px;
+  height: 60px;
+  border: 2px solid rgba(255, 255, 255, 0);
+  border-radius: 70px;
+  z-index: 1;
+}
+
+#modal-view.hidden,#modal_cell.hidden{
+  display: none;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.chiusura{
+  height: 10%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.chiusura img{
+  cursor: pointer;
+}
+
+.contenuto{
+  height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    color: #dcdcdc;
+    font-family: 'Merriweather', serif;
+    font-style: bold;
+    font-size: 30px;
+}
+
+.contenutoInformazioni{
+  height: 90%;
+  width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: #dcdcdc;
+    font-family: 'Merriweather', serif;
+    font-style: bold;
+    font-size: 30px;
+}
+
+.contenutoInformazioni .informazioni{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15px;
+  height: 80%;
+}
+
+.contenutoInformazioni .informazioni form{
+  width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.contenutoInformazioni form label{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.contenutoInformazioni form label input[type="submit"]{
+  background-color: rgba(107, 94, 221, 0.151);
+  margin-left: 2px;
+  margin-right: 2px;
+  font-size:20px;
+  height:30px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+  color: rgba(10, 19, 100, 0.884);
+  border: 1px rgba(107, 94, 221, 0.151) solid;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.contenutoInformazioni form label input[type="file"]{
+background-color: rgba(107, 94, 221, 0.151);
+    font-size: 20px;
+    height: 30px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    color: rgba(10, 19, 100, 0.884);
+    border: 1px rgba(107, 94, 221, 0.151) solid;
+    z-index: 1;
+}
+
+#modal-view 
+{
+  overflow-y: overlay;
+}
+#modal-view .boxUtente{
+  width: 300px;
+  margin-top: 10px;
+}
+
+.imageChiusura{
+  max-width: 30px;
+  max-height: 30px;
+}
+
+#modal-view img {
+  height: 400px;
+  width: 400px;
+}
+
+#modal-view .informazioni, #modal_cell .informazioni{
+  color: #dcdcdc;
+  font-family: 'Merriweather', serif;
+  font-style: bold;
+  font-size: 20px;
+  margin-left: 15px;
+}
+
+.contenuto{
+  height: 90%;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+#menuBar {
+  display: none;
+}
+
+
+#menuBar div {
+  width: 25px;
+  height: 3px;
+  background-color:rgb(5, 3, 8);
+  margin: 5px 0;
+}
+
+@media (max-width: 770px) {
+
+  body{
+    width:100%;
+    height: 100%;
+  }
+
+  a#Logo{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: rgba(16, 8, 87, 0.699);
+    text-decoration: none;
+  }
+  
+  #menuBar  {
+    display: block;
+    margin: 20px;
+  } 
+
+  .Boxes{
+    display:none;
+  }
+  
+  nav#barra{
+    width:100%;
+  }
+
+  nav#menu {
+    width: 40%;
+    display:flex;
+    justify-content: left;
+  }
+
+  nav#profilo{
+    width: 60%;
+    justify-content: flex-end;
+    margin-right: 10px;
+  }
+
+    span#avatar img {
+    width: 30px;
+    height: 30px;
+     border-radius: 35px;
+    } 
+    
+    span#nomeUtente  {
+    font-size: 15px;
+    }
+    
+    .boxInfoUtenteNav{
+      font-size: 10px;
+      height: 100%;
+    }
+
+    div#Posts{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 70%;
+      justify-content: center;
+      align-items: center;
+      margin-left: 60px;
+    }
+
+    .boxPost{
+      width: 90%;
+      height:50%;
+      margin-right: 20px;
+      margin-left: 20px;
+      flex-wrap: nowrap;
+    }
+
+    .titoloText{
+        font-size: 15px;
+        width: 100%;
+    }
+    
+    .likeBox{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+    
+    input[type='submit'].likeButton{
+      width:50%;
+    }
+    
+    .imageBox{
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+    
+    .imagePost{
+      width: 100%;
+      height: 200px;
+    }
+    
+    .contatoreLikes{
+      background-color: rgba(46, 44, 67, 0.12);
+      width:60%;
+      height:100%;
+      font-size: 15px;
+      margin-left:10px;
+    }
+    
+    .likeBox input[type=submit],.likeBox input[type=submit]{
+      width: 40%;
+      font-size: 10px;
+      height: 100%;
+    }
+
+    input[type=submit] {
+      font-size:15px;
+      height:10%;
+      width: 50%;
+    }    
+    
+    #modal-view img {
+      height: 200px;
+      width: 200px;
+    }
+    
+    #modal-view .informazioni , #modal_cell .informazioni{
+      font-size: 10px;
+      margin-left: 5px;
+    }
+
+    #modal-view .contenuto, #modal_cell .contenuto{
+      font-size: 10px;
+    }
+    
+    #modal-view, #modal_cell {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+    
+    #modal-view .contenuto , #modal_cell .contenuto{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width:100%;
+    }
+
+    #modal-view .contenutoLink a:link, 
+    #modal-view .contenutoLink a:visited, 
+    #modal-view .contenutoLink a:hover, 
+    #modal-view .contenutoLink a:active,
+    #modal_cell .contenutoLink a:link, 
+    #modal_cell .contenutoLink a:visited, 
+    #modal_cell .contenutoLink a:hover, 
+    #modal_cell .contenutoLink a:active    
+    {
+      text-decoration: none;
+      color:#dcdcdc;
+    }
+
+    #modal-view .contenutoLink,
+    #modal_cell .contenutoLink
+    {
+      font-size: 20px;
+      width: 50%;
+      height: 50%;
+      color: #dcdcdc;
+      font-family: 'Merriweather', serif;
+      font-style: bold;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .contenutoInformazioni {
+      font-size:20px;
+    }
+
+    .contenutoInformazioni form label input[type="file"]{
+      font-size: 10px;
+      height: 20px;
+    }
+    
+    .contenutoInformazioni form label input[type="submit"]{
+      font-size:10px;
+      height: 20px;
+    }
+}
+
+        
+        
+
+
+

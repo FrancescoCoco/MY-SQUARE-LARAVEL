@@ -1,0 +1,399 @@
+html{
+  height:100%;
+}
+
+body {
+    background-image: url("https://www.cemanext.it/wp-content/uploads/2016/09/sfondo-landig-social.jpg");
+    background-size: cover;
+    background-position: center;
+    margin: 0px;
+    overflow-y: hidden;
+    height:100%;
+  }
+  
+  .hidden{
+    display:none;
+  }
+  
+  a:link , a:visited ,a:hover, a:active {
+  color:rgba(16, 8, 87, 0.699);
+  }
+  
+  
+  a#Logo{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    color: rgba(16, 8, 87, 0.699);
+    text-decoration: none;
+  }
+  
+  nav#barra{
+    margin-top: 0px;
+    display: flex;
+    height: 50px;
+    background-color: rgba(93, 91, 94, 0.288);
+    border: 0.5px rgba(93, 91, 94, 0) solid;
+  }
+
+  nav#menu {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    font-family: Helvetica, sans-serif;
+    height: 100%;
+  }
+  
+  form input[type=search] {
+    background-color:rgba(107, 94, 221, 0.151);
+    width: 300px;
+    padding: 6px;
+    border: none;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 20px;
+    margin-top:1em;
+    font-family:'Merriweather', serif;
+  }
+  
+  input[type=submit] {
+    background-color: rgba(107, 94, 221, 0.151);
+    font-size:20px;
+    height:30px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    color: rgba(10, 19, 100, 0.884);
+    border: 1px rgba(107, 94, 221, 0.151) solid;
+    z-index: 1;
+    cursor: pointer;
+  }
+
+
+  nav#profilo{
+    height: 100%;
+    width: 20%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  span#avatar{
+        display: flex;
+        justify-content: center;
+  } 
+
+    span#avatar img  {
+    width: 45px;
+    height: 45px;
+     border: 2px solid rgba(255, 255, 255, 0);
+     border-radius: 50px;
+    z-index: 1;
+    } 
+    
+    span#nomeUtente  {
+    font-weight: bold;
+    font-size: 20px;
+    font-family:'Merriweather', serif;
+    color: rgb(59, 47, 85);
+    }
+    
+    input:focus{
+    outline: none;
+    }
+
+    .Boxes{
+        font-weight: bold;
+        font-size: 20px;
+        font-family:'Merriweather', serif;
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+        border-right: 1px rgba(16, 8, 87, 0.123) solid ;
+        border-left: 1px rgba(16, 8, 87, 0.123) solid ;
+      }
+      
+      nav a , nav input {
+        color: rgb(59, 47, 85);
+        text-decoration: none;
+      }
+
+      #ResearchResult {
+          display: flex;
+          flex-direction: column;
+          height: calc(100% - 60px);
+      }
+      
+      h1#Logo{
+      display: flex;
+      justify-content: center;
+      font-family: 'Source Sans Pro', sans-serif;
+      font-size: 60px;
+      font-weight: bold;
+      color: rgba(16, 8, 87, 0.699);
+      margin-bottom: 20px;
+      cursor: pointer;
+      }
+      
+      span#RicercaUtenteBox{
+        height: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      form#RicercaUtente{
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        flex-wrap: wrap;
+      }
+      
+
+      div#boxUtenti {
+          height: 60%;
+          display: flex;
+          text-align: center;
+          flex-wrap: wrap;
+          margin-left: 20px;
+          margin-right: 20px;
+          overflow-y: overlay;
+          background-color:  rgba(229, 219, 250, 0.561);
+      }
+      
+      div#boxUtenti div.BoxUtente {
+          margin: 20px;
+          display: flex;
+          flex-wrap: nowrap;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+      }
+      
+      div.BoxUtente{
+      font-family: 'Merriweather', serif;
+      font-style: bold;
+      font-size: 15px;
+      color: #dcdcdc;
+      text-align-last: center;
+      border: 1px solid #dcdcdc;
+      background-color: rgba(16, 8, 87, 0.356);
+      padding: 10px;
+      height: 70%;
+      }
+
+      .buttonBox {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
+
+      img.avatar{
+        width: 150px;
+        height: 150px;
+        border: 2px solid rgba(255, 255, 255, 0);
+        cursor: pointer;
+      }
+
+      span.nomeUtente {
+        margin-top: 5px;
+        margin-bottom: 10px;
+      }
+      
+      #modal-view, #modal_cell {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+        background-color: rgba(0, 0, 0, 0.7);
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+
+      #modal-view img {
+        height: 400px;
+        width: 400px;
+      }
+      
+      #modal-view .informazioni{
+        color: #dcdcdc;
+        font-family: 'Merriweather', serif;
+        font-style: bold;
+        font-size: 20px;
+        margin-left: 15px;
+      }
+      
+      #modal-view.hidden ,#modal_cell.hidden{
+        display: none;
+      }
+      
+      .no-scroll {
+        overflow: hidden;
+      }
+     
+      .chiusura{
+        height: 10%;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+      }
+
+      .chiusura img{
+        cursor: pointer;
+      }
+      
+      .contenuto{
+        height: 90%;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+
+      .imageChiusura{
+        max-width: 30px;
+        max-height: 30px;
+      }
+
+      #menuBar {
+        display: none;
+      }
+      
+      
+      #menuBar div {
+        width: 25px;
+        height: 3px;
+        background-color:rgb(5, 3, 8);
+        margin: 5px 0;
+      }
+      
+      @media (max-width: 770px) {
+      
+        body{
+          width:100%;
+          height: 100%;
+        }
+
+        a#Logo{
+          font-family: 'Source Sans Pro', sans-serif;
+          font-size: 15px;
+          font-weight: bold;
+          color: rgba(16, 8, 87, 0.699);
+          text-decoration: none;
+        }
+        
+        #menuBar  {
+          display: block;
+          margin: 20px;
+        } 
+      
+        .Boxes{
+          display:none;
+        }
+        
+        nav#barra{
+          width:100%;
+        }
+      
+        nav#menu {
+          width: 40%;
+          display:flex;
+          justify-content: left;
+        }
+      
+        nav#profilo{
+          width: 60%;
+          justify-content: flex-end;
+          margin-right: 10px;
+        }
+        
+        form#RicercaContenuto{
+          display:flex;
+          flex-direction: column;
+          flex-wrap: wrap;
+        }
+
+          span#avatar img {
+          width: 30px;
+          height: 30px;
+          border-radius: 35px;
+          } 
+          
+          span#nomeUtente  {
+          font-size: 15px;
+          }
+          
+          .boxInfoUtenteNav{
+            font-size: 10px;
+            height: 100%;
+          }
+      
+          
+          input[type=submit] {
+            font-size:15px;
+          }    
+          
+          #modal-view img {
+            height: 200px;
+            width: 200px;
+          }
+          
+          #modal-view .informazioni{
+            font-size: 10px;
+            margin-left: 5px;
+          }
+          
+          #modal-view, #modal_cell{
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+          }
+          
+          #modal-view .contenuto, #modal_cell .contenuto{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 10px;
+            width:100%;
+          }
+      
+          #modal-view .contenutoLink a:link, 
+          #modal-view .contenutoLink a:visited, 
+          #modal-view .contenutoLink a:hover, 
+          #modal-view .contenutoLink a:active,
+          #modal_cell .contenutoLink a:link, 
+        #modal_cell .contenutoLink a:visited, 
+        #modal_cell .contenutoLink a:hover, 
+        #modal_cell .contenutoLink a:active{
+            text-decoration: none;
+            color:#dcdcdc;
+          }
+
+          div#boxUtenti {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex-wrap: nowrap;
+        }
+
+          #modal_cell .contenutoLink{
+            font-size: 20px;
+            width: 50%;
+            height: 50%;
+            color: #dcdcdc;
+            font-family: 'Merriweather', serif;
+            font-style: bold;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+          }
+      }

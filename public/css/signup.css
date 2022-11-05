@@ -1,0 +1,120 @@
+html{
+  height:100%;
+}
+
+.overlay
+{
+    opacity: 0.6;
+}
+
+body {
+    background-image: url("https://www.cemanext.it/wp-content/uploads/2016/09/sfondo-landig-social.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    color: rgba(16, 8, 87, 0.699);
+}
+
+main {
+    display: flex;
+    height: 80%;
+    flex-direction: column;
+    justify-content: center ; 
+    align-items: center;
+    background-color: transparent;
+}
+
+div.tasti {
+    display: flex;
+    justify-content: space-between ;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-weight: normal;
+    color: rgba(10, 19, 100, 0.801);
+    margin-bottom: 0.5em;
+    cursor: pointer;
+}
+
+span#tastoLog{
+  border-right: 1px rgba(10, 19, 100, 0.801) solid ;
+  margin-right: 0.05em;
+}
+
+span#tastoSubscribe{
+  border-left: 1px rgba(10, 19, 100, 0.801) solid ;
+  margin-left: 0.05em;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link , a:visited ,a:hover, a:active {
+    color:rgba(10, 19, 100, 0.801);
+  }
+
+  div.campo{
+  border: 1px solid #dcdcdc;
+  background-color: rgba(16, 8, 87, 0.356);
+  }
+
+  label{
+    display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-family: 'Merriweather', serif;
+      font-style: bold;
+      font-size: 15px;
+      color: rgba(10, 19, 100, 0.884);
+      margin-left: 0.5em;
+    }
+
+    input[type=text] ,input[type=password]{
+        background-color: rgba(247, 223, 255, 0.733);
+        font-size:15px;
+        font-family:'Merriweather', serif ;
+        color: rgba(10, 19, 100, 0.884);
+      }
+
+    input[type=submit]{
+    background-color: rgba(231, 158, 255, 0.466);
+    font-size:20px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    color: rgba(10, 19, 100, 0.884);
+    border: 1px rgba(231, 158, 255, 0.466) solid ;
+    }
+  
+    p.TastoInvio{
+    display: flex;
+    justify-content: center;
+    }
+
+  #Errore ,#ErrorePassword, #ErroreMail,#ErroreNomeUtente {
+    color: darkred;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-left: 0.5em;
+    font-size:  25px;
+    display: flex;
+    justify-content: center;
+  }
+
+ label input {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+  }
+
+  @media (max-width: 770px){
+    header h1{
+      font-size: 60px;
+    }
+  }
